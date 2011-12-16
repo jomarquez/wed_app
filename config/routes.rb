@@ -1,4 +1,14 @@
 WedApp::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/venue"
+
+  get "pages/hotels"
+
+  get "pages/directions"
+
+  get "pages/contact"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
