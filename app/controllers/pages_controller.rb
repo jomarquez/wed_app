@@ -1,17 +1,22 @@
 class PagesController < ApplicationController
-  def home
+  def home 
+      @title = "Home"
   end
 
-  def venue
+  def venue 
+    @title = "Venue"
   end
 
-  def hotels
+  def hotels 
+    @title = "Hotels"
   end
 
-  def directions
+  def directions      
+    @title = "Directions"
   end
 
-  def contact
+  def contact   
+    @title = "Contact Us"
   end
 
 end
