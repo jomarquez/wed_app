@@ -4,7 +4,7 @@ class PagesController < ApplicationController
   end
 
   def venue 
-    @title = "Venue"
+    @title = "Vintage Villas"
   end
 
   def hotels 

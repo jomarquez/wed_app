@@ -1,13 +1,12 @@
 WedApp::Application.routes.draw do
-  get "pages/home"
 
-  get "pages/venue"
+  match '/venue', :to => 'pages#venue'
 
-  get "pages/hotels"
+  match '/hotels', :to => 'pages#hotels'
 
-  get "pages/directions"
+  match '/directions', :to => 'pages#directions'
 
-  get "pages/contact"
+  match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -59,7 +58,8 @@ WedApp::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   # root :to => "welcome#index"
-
+  root :to => 'pages#home'
+  
   # See how all your routes lay out with "rake routes"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
