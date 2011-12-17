@@ -5,7 +5,8 @@
 //v1.7
 // Flash Player Version Detection
 // Detect Client Browser type
-// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved.
+// Copyright 2005-2008 Adobe Systems Incorporated.  All rights reserved. 
+
 var isIE  = (navigator.appVersion.indexOf("MSIE") != -1) ? true : false;
 var isWin = (navigator.appVersion.toLowerCase().indexOf("win") != -1) ? true : false;
 var isOpera = (navigator.userAgent.indexOf("Opera") != -1) ? true : false;
@@ -273,5 +274,5 @@ function AC_GetArgs(args, ext, srcParamName, classid, mimeType){
   ret.objAttrs["classid"] = classid;
   if (mimeType) ret.embedAttrs["type"] = mimeType;
   return ret;
-}
+}      
 // -->

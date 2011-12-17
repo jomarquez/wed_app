@@ -1,0 +1,94 @@
+/* fixed side navigation css*/
+ul#navhome {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}  
+ul#navhome li {
+    width: 100px;
+}
+ul#navhome li a {
+    display: block;
+    margin-left: -2px;
+    width: 100px;
+    height: 70px;    
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    /*-moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    */
+    opacity: 1.0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+}       
+ul#navhome .home a{
+    background-image: url(../images/march30.png);   
+	background-size: 128%;
+}
+
+ul#navigation {
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+    top: 185px;
+    left: 0px;
+    list-style: none;
+    z-index:9999;
+}
+
+ul#navigation li {
+    width: 100px;
+}
+ul#navigation li a {
+    display: block;
+    margin-left: -2px;
+    width: 100px;
+    height: 70px;    
+    background-color:#CFCFCF;
+    background-repeat:no-repeat;
+    background-position:center center;
+    border:1px solid #AFAFAF;
+    -moz-border-radius:0px 10px 10px 0px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -khtml-border-bottom-right-radius: 10px;
+    -khtml-border-top-right-radius: 10px;
+    /*-moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    */
+    opacity: 0.7;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+} 
+ul#navigation .rsvp a      {
+    background-image: url(../images/mail_pink.png); 
+}
+ul#navigation .registry a      {
+    background-image: url(../images/tiffany_gift.png);  
+    background-size: 100%;  
+}
+ul#navigation .twitter a      {
+    background-image: url(../images/twitter.png);
+}
+ul#navigation .blog a      {
+    background-image: url(../images/blog.png);
+}
+ul#navigation .podcasts a      {
+    background-image: url(../images/ipod.png);
+}
+ul#navigation .rssfeed a   {
+    background-image: url(../images/rss.png);
+}
+ul#navigation .contact a     {
+    background-image: url(../images/mail_pink.png);
+}
+

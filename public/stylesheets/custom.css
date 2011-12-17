@@ -141,11 +141,13 @@ footer {
   left: 0;
   position: fixed;
   width: 100%;  
-  background-image: url(http://www.renklibeyaz.com/thisway/wp-content/themes/ThisWay/images/menu-bg1-light.png)
+  background-image: url(http://www.renklibeyaz.com/thisway/wp-content/themes/ThisWay/images/menu-bg1-light.png);
+  list-style: none;
+  z-index:9999;
 }
 
 footer nav {
-  float: none;
+  float: none; 
 }    
 
 #footertext {
