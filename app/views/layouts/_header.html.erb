@@ -1,0 +1,15 @@
+<header>    
+	<div class="top round">      
+    <nav class="round">
+      <ul>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Venue", venue_path %></li>
+        <li><%= link_to "Hotels", hotels_path %></li>  
+		<li><%= link_to "Directions", directions_path %></li>
+		<li><%= link_to "Contact Us", contact_path %></li>  
+      </ul>
+    </nav>          
+    <% logo = image_tag("logo.png", :alt => "Sample App", :class => "round") %>
+	<%= link_to logo, root_path %>
+</div>
+</header>
