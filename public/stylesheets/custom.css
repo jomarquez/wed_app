@@ -1,11 +1,140 @@
-.container {
-  width: 710px; 
-}
-
 body {
   background: url(../images/black-wood.jpg) ;    
+  letter-spacing:0;     
+  padding:20px 0;
+  position:relative;
+  -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.container {
+  width: 710px;  
+  padding:10px;
+  margin:0 auto;
+  position:relative;
+  z-index:0;
+}
+
+#example {
+	width:600px;
+	height:350px;
+	position:relative;    
+	left:40px;
+} 
+#post {
+	width:600px;
+	position:relative;    
+	left:20px;          
+}
+
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+#frame {
+	position:absolute;
+	z-index:0;
+	width:739px;
+	height:341px;
+	top:-3px;
+	left:-80px;
+}
+
+/*  Slideshow  */
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+ 
+/*  Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash  */
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}      
+
+/*  Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block     */
+.slides_container div.slide {
+	width:570px;
+	height:270px;
+	display:block;
+}       
+
+/*  Next/prev buttons  */
+#slides .next,#slides .prev {
+	position:absolute;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*  Pagination   */
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}   
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}   
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+
+/*  Caption  */
+.caption {
+	z-index:500;
+	position:absolute;
+	bottom:-35px;
+	left:0;
+	height:30px;
+	padding:5px 20px 0 20px;
+	background:#000;
+	background:rgba(0,0,0,.5);
+	width:540px;
+	font-size:1.3em;
+	line-height:1.33;
+	color:#fff;
+	border-top:1px solid #000;
+	text-shadow:none;  
+	font-weight: 100%; 
+}
 header {
   padding-top: 20px;    
 }    
@@ -51,6 +180,12 @@ header img {
   color:#E6287B;
 }
 
+#example {
+	width:600px;
+	height:350px;
+	position:relative;
+}
+
 /* Links */
 
 a {
@@ -63,7 +198,7 @@ a:hover {
 }
 
 a:visited {
-  color: #069;
+  color: #13A095; 
 }    
 
 /* Navigation */
@@ -185,12 +320,17 @@ footer nav {
 
 .text-center {
   text-align: center;  
+} 
+
+.text-move-right {    
+  position: relative;
+  right: 40px;   
 }
 
 /*float left*/
 .left {
   float: left; /*left in our text*/
-  margin: 4px; /*space around the image*/
+  margin: 25px; /*space around the image*/
 }
 
 /*float right*/
@@ -206,3 +346,35 @@ h5 .move-up  {
   z-index: 5;
 } 
 
+.text-date {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 100; 
+}
+
+.text-content {
+  color:#786E69;
+  font-size:11px;
+  letter-spacing:.1em;
+  padding-bottom:3px;
+  text-shadow:none; 
+  font-weight: 100%;  
+}
+.postdate {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  float: left;  
+    
+}
+.month, .day, .year {
+  position: absolute;
+  text-indent: -1000em;
+  background-image: url(../images/dates.png);
+  background-repeat: no-repeat;   
+}
+.month { top: 2px; left: 0; width: 32px; height: 24px;}
+.day { top: 25px; left: 0; width: 32px; height: 25px;}
+.year { bottom: 0; right: 0; width: 17px; height: 48px;}
+.m-03 { background-position: 0 -57px;}
+.d-30 { background-position: -97px -403px;}
+.y-2012 { background-position: -150px -305px;}

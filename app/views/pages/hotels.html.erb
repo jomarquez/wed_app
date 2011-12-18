@@ -1,6 +1,76 @@
-    <h1>Hotels</h1>
-    <p>
-      This is the home page for the
-      <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
+    <h1>Hotels</h1>  
+	<div id="post">
+		<div class="span-15 round last">   
+		  <p class="text-content">Family, friends, loved one.  To reserve a room... <br />
+			Please make your reservations by phone and mention that you will be attending <h7 class="text-date loud text-pink">Joanna & Christian's Wedding</h7>, 
+			this will ensure you get the rates listed below. <br />  
+
+			To ensure you get the best rate, please make your reservations as soon as possible, 
+			there are a limited number of rooms available at these special rates.  See you soon!</p>   
+			
+		  <div class="span-5 round">     
+            <h6><a href="http://www.vintagevillas.com/">Vintage Villas</a></h6>
+		    <p class="text-content"><!--15 Rooms  <br \>-->
+		      Reserve By: <h7 class="text-date loud text-pink">March 9, 2012</h7> <br \> 
+		      East Texas Villa  <br \>   
+		      King Rooms: $149.00 <br \>  
+		      Double Queen Rooms: $139.00 <br \>   
+		      Single Queen Rooms: $129.00 <br \> 
+		      Address: <br \>                                  
+		      <a href="http://g.co/maps/edg6w">4209 Eck Lane <br \>  
+		      Austin, Texas 78734 </a><br \> 
+		    </p> 
+		  </div> 
+          
+		  <div class="span-10 round last">
+			<% venue = image_tag("east-texas-lobby.jpg ", :alt => "Vintage Villas", :class => "round") %>
+		    <%= link_to venue, 'http://www.vintagevillas.com/' %>
+			<h6 class="text-right small text-pink">Vintage Villas East Texas Room</h6>
+		  </div>	   
+		  
+		  <div class="span-10 round">
+			<% venue = image_tag("marriott_room.jpg", :alt => "Vintage Villas", :class => "round right") %>
+			<%= link_to venue, 'http://www.marriott.com/hotels/travel/austw-towneplace-suites-austin-northwest/' %>  
+			<h6 class="text-left small text-pink">Marriott Two-Bedroom Suite</h6>  
+		  </div>
+		
+		  <div class="span-5 round last">   
+		    <h6><a href="http://www.marriott.com/hotels/travel/austw-towneplace-suites-austin-northwest/">Marriott Town Place Suites</a></h6>   
+		    <p class="text-content">
+			  Reserve By: <h7 class="text-date loud text-pink">March 20, 2012</h7> <br \> 
+		  	  <!--10 Rooms <br \> -->   
+			  Single Rooms: $104 <br \>  
+			  Double Rooms: $124 <br \>  
+			  Gov't Rate: $108 <br \>  
+			  Amenities: Free Breakfast <br \>  
+			  Phone: (512) 231-9360 <br \>  
+			  Address: <br \>  
+			  <a href="http://g.co/maps/a4tg5">10024 N Capital of TX Hwy <br />
+			  Austin, TX 78759 </a><br \>	 
+			  </p>
+		  </div> 
+		    		
+		  <div class="span-5 round">   	
+			<h6><a href="http://www.extendedstayhotels.com/hotels/austin-arboretum-north-esd.html">Extended Stay </a></h6>  
+			<p class="text-content"> 
+		      Reserve By: <h7 class="text-date loud text-pink">February 1, 2012</h7> <br \>   
+			  <!--20 Rooms <br \>-->  
+			  Single Rooms: $67.99 <br \>  
+			  Double Rooms: $76.49 <br \>  
+			  Phone: (512) 833-0898 <br \>    
+		      Address: <br \>
+		      <a href="http://g.co/maps/6ty3r">2700 Gracy Farms Lane <br \>
+		      Austin, TX 78758</a><br \>
+			  </p>
+	      </div>    
+	
+		  <div class="span-10 round last">
+			<% venue = image_tag("e7.jpg", :alt => "Vintage Villas", :class => "round") %>
+			<%= link_to venue, 'http://www.marriott.com/hotels/travel/austw-towneplace-suites-austin-northwest/' %>  
+			<h6 class="text-right small text-pink">Extended Stay Deluxe Suite</h6>  
+		  </div>
+       </div> 
+    </div>
+	
+	
+	  
