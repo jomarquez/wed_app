@@ -1,3 +1,25 @@
     <h1>Contact Us</h1>
- 	
-	</div>
+    
+	<div id="form-div">
+	    <form class="form" id="form1">
+	      <p class="name">
+	        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] text-input" id="name" />
+	        <label for="name">Name</label>
+	      </p>
+	      <p class="email">
+	        <input name="email" type="text" class="validate[required,custom[email]] text-input" id="email"  />
+	        <label for="email">E-mail</label>
+	      </p>
+	      <p class="web">
+	        <input type="text" name="web" id="web" />
+	        <label for="web">Website</label>
+	      </p>
+	      <p class="text">
+	        <textarea name="text" class="validate[required,length[6,300]] text-input" id="comment"></textarea>
+	      </p>
+	      <p class="submit">
+	        <input type="submit" value="Send" />
+	      </p>
+	    </form>
+
+	  </div>

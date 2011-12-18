@@ -283,6 +283,18 @@ footer {
 
 footer nav {
   float: none; 
+}
+
+footer a {
+  color: #E6287B;  
+}
+
+footer a:hover {
+  color: #13A095;  
+}
+ 
+footer a:visited {
+  color: #E6287B; 
 }    
 
 #footertext {
@@ -377,4 +389,150 @@ h5 .move-up  {
 .year { bottom: 0; right: 0; width: 17px; height: 48px;}
 .m-03 { background-position: 0 -57px;}
 .d-30 { background-position: -97px -403px;}
-.y-2012 { background-position: -150px -305px;}
+.y-2012 { background-position: -150px -305px;}     
+
+/* Contact us form */
+form.formular {
+	font-family: tahoma, verdana, "sans-serif";
+	font-size: 12px;
+	padding: 20px;
+	border: 1px solid #A5A8B8;
+
+	width:300px;
+	margin-left:300px;
+}
+
+.formular fieldset {
+	margin-top: 20px;
+	padding : 15px;
+	border: 1px solid #B5B8C8;
+	
+}
+
+.formular legend {
+	font-size: 12px;
+	color: #15428B;
+	font-weight: 900;
+}
+
+.formular fieldset label {
+	float: none;
+	text-align: inherit;
+	width: auto;
+}
+
+.formular label span {
+	color: #000;
+}
+
+.formular input, .formular select, .formular textarea {
+	display : block;
+	margin-bottom: 5px;
+}
+
+.formular .text-input {
+	width: 250px;
+	color: #555;
+	padding: 4px;
+	border: 1px solid #B5B8C8;
+	font-size: 14px;
+	margin-top: 4px;
+	background: #FFF url('/img/form/text-bg.gif') repeat-x;
+	
+}
+.formular textarea {
+	width: 250px;
+	height:70px;
+	color: #555;
+	padding: 4px;
+	border: 1px solid #B5B8C8;
+	font-size: 14px;
+	margin-top: 4px;
+	background: #FFF url('/img/form/text-bg.gif') repeat-x;
+	
+}
+.formular .infos {
+	background: #FFF;
+	color: #333;
+	font-size: 12px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.formular span.checkbox, .formular .checkbox {
+	display: inline;
+}
+
+.formular .submit {
+	background: url('/img/form/button-bg.png') repeat-x;
+	border: 1px solid #AAA;
+	padding: 4px;
+	margin-top: 20px;
+	float: right;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.formular hr {
+	clear: both;
+	visibility: hidden;
+}
+
+.formular .fc-error {
+	width: 350px;
+	color: 555;
+	padding: 4px;
+	border: 1px solid #B5B8C8;
+	font-size: 12px;
+	margin-bottom: 15px;
+	background: #FFEAEA;
+}
+
+input, textarea { 
+	padding: 8px;
+	border: solid 1px #E5E5E5;
+	font: normal 12px Verdana, Tahoma, sans-serif;
+	width: 200px;
+	background: #FFFFFF url('form_background.png') left top repeat-x;/*Mimic Background Property in Internet Explorer since IE 6,7,8 does not support CSS3*/
+	background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));
+	background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);
+	box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/*0.1 actually means 10 %*/
+	-moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+	}
+
+textarea { 
+	width: 400px;
+	max-width: 400px;
+	height: 150px;
+	line-height: 150%;
+	}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+-moz-box-shadow:0 0 8px #13A095;
+	-webkit-box-shadow:0 0 8px #13A095;
+	box-shadow:0 0 8px #13A095;
+}
+
+.form label { 
+	margin-left: 12px; 
+	color: #999999; 
+	}
+
+.submit input {
+	width: auto;
+	padding: 10px 14px;
+	background: #13A095;
+	font-size: 14px;
+	color: #FFFFFF;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	cursor:pointer;
+	}
+#form-div { 
+-moz-border-radius:12px 12px 12px 12px;
+-webkit-border-radius: 12px 12px 12px 12px;
+background-color:#F5F5F5;
+padding:15px;
+}
