@@ -7,6 +7,8 @@ WedApp::Application.routes.draw do
   match '/directions', :to => 'pages#directions'
 
   match '/contact', :to => 'pages#contact'
+  
+  match '/rsvp', :to => 'pages#rsvp' 
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

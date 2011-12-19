@@ -70,6 +70,19 @@ describe PagesController do
           response.should have_selector("title",
                             :content => @base_title + " | Contact Us")
     end
+  end  
+  
+  describe "GET 'rsvp'" do
+    it "should be successful" do
+      get 'rsvp'
+      response.should be_success
+    end    
+    
+    it "should have the right title" do
+          get 'rsvp'
+          response.should have_selector("title",
+                            :content => @base_title + " | RSVP")
+    end
   end
 
 end
