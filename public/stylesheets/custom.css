@@ -338,6 +338,11 @@ footer a:visited {
   position: relative;
   right: 40px;   
 }
+   
+.text-move-left {    
+  position: relative;
+  left: 30px;   
+}
 
 /*float left*/
 .left {
@@ -348,7 +353,7 @@ footer a:visited {
 /*float right*/
 .right  {
   float: right; /*right in our text*/
-  margin: 4px; /*space around the image*/
+  margin: 25px; /*space around the image*/
 } 
 
 /*float right*/
@@ -375,7 +380,7 @@ h5 .move-up  {
   position: relative;
   width: 50px;
   height: 50px;
-  float: left;  
+  float: left;   
     
 }
 .month, .day, .year {

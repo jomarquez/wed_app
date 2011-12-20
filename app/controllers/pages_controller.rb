@@ -21,6 +21,10 @@ class PagesController < ApplicationController
   
   def rsvp   
     @title = "RSVP"
+  end  
+  
+  def about   
+    @title = "About Us"
   end
 
 end

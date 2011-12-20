@@ -6,7 +6,9 @@ WedApp::Application.routes.draw do
 
   match '/directions', :to => 'pages#directions'
 
-  match '/contact', :to => 'pages#contact'
+  match '/contact', :to => 'pages#contact'  
+  
+  match '/about', :to => 'pages#about' 
   
   match '/rsvp', :to => 'pages#rsvp' 
 
